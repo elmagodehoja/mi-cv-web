@@ -4,66 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Daniel Romero Cózar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Daniel Romero Cózar</h1>
-        <p><strong>Informático y Programador</strong></p>
-        <ul>
-            <li>Email: daniplay1011@gmail.com</li>
-            <li>Teléfono: +34 663 25 66 18</li>
-            <li>Ubicación: Granada, CP 18015</li>
-        </ul>
-    </header>
-
-    <hr>
-
-    <section id="perfil">
-        <h2>Perfil Profesional</h2>
-        <p>
-            Apasionado por la informática y las tecnologías, con experiencia práctica en desarrollo web, 
-            configuración de redes y administración de sistemas. Persona dedicada con gran capacidad de 
-            aprendizaje y facilidad para los idiomas.
-        </p>
-    </section>
-
-    <section id="experiencia">
-        <h2>Experiencia Laboral</h2>
-        
-        <article>
-            <h3>Erasmus+ en Grecia - Twinsoft</h3>
-            <p><em>Marzo 2025 - Junio 2025</em></p>
-            <ul>
-                <li>Técnico administrador e instalador de sistemas POS.</li>
-                <li>Mantenimiento de impresoras, datáfonos y redes locales.</li>
-                <li>Soporte técnico para hoteles, restaurantes y supermercados.</li>
+    <div class="container">
+        <header>
+            <h1>Daniel Romero</h1>
+            <div class="subtitle">Informático y Programador</div>
+            <ul class="contact-info">
+                <li>📍 Granada</li>
+                <li>📞 +34 663 25 66 18</li>
+                <li>📧 daniplay1011@gmail.com</li>
             </ul>
-        </article>
+        </header>
 
-        <article>
-            <h3>Proyectos Propios y Experiencia Técnica</h3>
-            <p><em>Julio 2020 - Actualidad</em></p>
+        <section id="perfil">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un apasionado por la informática y las tecnologías que conectan nuestro mundo.
+                Me considero una persona dedicada, con una gran capacidad para aprender y aplicar conocimientos en diversas áreas.
+                Cuento con experiencia práctica en desarrollo web, configuración de redes y administración de sistemas.
+            </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <div class="job-header">
+                    <span class="job-title">Erasmus+ en Grecia (Twinsoft)</span>
+                    <span class="date">Marzo 2025 - Junio 2025</span>
+                </div>
+                <p>Técnico administrador, instalador y reparador de sistemas POS, impresoras, datáfonos y redes locales en hoteles, restaurantes y supermercados.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <span class="job-title">Experiencia y Habilidades Técnicas</span>
+                    <span class="date">Julio 2020 - Actualidad</span>
+                </div>
+                <ul>
+                    <li>Configuración y gestión de servidor propio para administración de sistemas.</li>
+                    <li>Desarrollo web utilizando HTML, CSS y conocimientos de Java.</li>
+                    <li>Uso de Git para control de versiones.</li>
+                    <li>Montaje y configuración de redes y sistemas operativos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h2>Tecnologías y Certificaciones</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h4>Programación e IA</h4>
+                    <ul>
+                        <li>HTML, CSS, Git</li>
+                        <li>Python y Java (Nivel inicial)</li>
+                        <li>Dominio de API de OpenAI (ChatGPT)</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h4>Sistemas y Redes</h4>
+                    <ul>
+                        <li>Administración de Redes</li>
+                        <li>Introducción a Docker</li>
+                        <li>Gestión de Servidores POS</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h4>Idiomas</h4>
+                    <ul>
+                        <li>Español: Nativo</li>
+                        <li>Inglés: Nivel Alto (B2 Cambridge)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación Académica</h2>
             <ul>
-                <li>Montaje y configuración de servidores propios y gestión de servicios.</li>
-                <li>Administración de sistemas y resolución de problemas técnicos.</li>
+                <li><strong>G.S. Desarrollo de Aplicaciones Web:</strong> IES Hermenegildo Lanz (2025 - En curso)</li>
+                <li><strong>G.M. Sistemas Microinformáticos y Redes:</strong> IES Virgen del Carmen (2023 - 2025)</li>
+                <li><strong>Educación Secundaria Obligatoria:</strong> IES Jabalcuz (2019 - 2023)</li>
             </ul>
-        </article>
-    </section>
+        </section>
 
-    <section id="tecnologias">
-        <h2>Tecnologías y Formación</h2>
-        <ul>
-            <li><strong>Desarrollo:</strong> HTML, CSS, Java, Python, Git.</li>
-            <li><strong>Sistemas:</strong> Docker, Administración de Redes, Configuración de SO.</li>
-            <li><strong>IA:</strong> Dominio de API de OpenAI (ChatGPT).</li>
-            <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Nivel Alto - B2 Cambridge).</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Actualmente cursando: Grado Superior en Desarrollo de Aplicaciones Web (IES P. Hermenegildo Lanz).</p>
-    </footer>
+        <footer>
+            <p>Daniel Romero Cózar - 2026 - Granada, España</p>
+        </footer>
+    </div>
 
 </body>
 </html>

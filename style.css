@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.date {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+}
+
+.tech-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    border-top: 3px solid var(--accent-color);
+}
+
+.tech-card h4 {
+    margin: 0 0 10px 0;
+    color: var(--accent-color);
+    font-size: 0.95em;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #95a5a6;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container { padding: 20px; }
+    .job-header { flex-direction: column; }
+    .contact-info { flex-direction: column; align-items: center; gap: 5px; }
+}
