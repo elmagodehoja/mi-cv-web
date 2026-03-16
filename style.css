@@ -1,48 +1,44 @@
 :root {
-    --primary-color: #2c3e50;
-    --accent-color: #3498db;
-    --text-color: #333;
-    --bg-color: #f4f7f6;
+    --primary: #2563eb; /* Azul más vibrante */
+    --dark: #1e293b;
+    --light-bg: #f8fafc;
+    --border: #e2e8f0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    color: var(--dark);
+    line-height: 1.5;
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .container {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
-    background: #fff;
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 h1 {
+    font-size: 2.5rem;
     margin: 0;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2.2em;
+    color: var(--dark);
 }
 
 .subtitle {
-    font-weight: bold;
-    color: var(--accent-color);
-    margin-top: 5px;
-    font-size: 1.1em;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .contact-info {
@@ -50,80 +46,87 @@ h1 {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    font-size: 0.9em;
-    margin-top: 15px;
+    gap: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
 }
 
-section {
-    margin-bottom: 35px;
+.contact-info i {
+    color: var(--primary);
+    margin-right: 5px;
 }
 
 h2 {
-    color: var(--primary-color);
-    border-left: 5px solid var(--accent-color);
-    padding-left: 15px;
-    text-transform: uppercase;
-    font-size: 1.3em;
-    margin-bottom: 20px;
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 10px;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 i {
+    color: var(--primary);
+    font-size: 1.1rem;
 }
 
 .experience-item {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .job-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
-}
-
-.job-title {
     font-weight: bold;
-    color: var(--primary-color);
-    font-size: 1.1em;
-}
-
-.date {
-    font-style: italic;
-    color: #7f8c8d;
-    font-size: 0.9em;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
 .tech-card {
-    background: #f8f9fa;
     padding: 15px;
-    border-radius: 6px;
-    border-top: 3px solid var(--accent-color);
+    background: var(--light-bg);
+    border-radius: 8px;
+    transition: transform 0.2s;
+    border: 1px solid var(--border);
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
 }
 
 .tech-card h4 {
-    margin: 0 0 10px 0;
-    color: var(--accent-color);
-    font-size: 0.95em;
-    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    color: var(--primary);
+}
+
+.cert-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.cert-item {
+    padding: 8px;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--primary);
+    background: #eff6ff;
 }
 
 footer {
-    margin-top: 40px;
     text-align: center;
-    font-size: 0.85em;
-    color: #95a5a6;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #94a3b8;
 }
 
 @media (max-width: 600px) {
     .container { padding: 20px; }
+    .contact-info { flex-direction: column; gap: 5px; }
     .job-header { flex-direction: column; }
-    .contact-info { flex-direction: column; align-items: center; gap: 5px; }
+    .cert-list { grid-template-columns: 1fr; }
 }
